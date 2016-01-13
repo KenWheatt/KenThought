@@ -1,0 +1,42 @@
+body { 
+	padding-top: 50px; 
+}
+.fancy{
+	background: linear-gradient(#8EA3A3, #A5B5B5, #DBE1E1); /* Standard syntax */
+}
+.tabQTP {
+	border-bottom:1px solid;
+    border-top:2px solid #000000;
+     border-top-left-radius: 2em;
+     border-top-right-radius: 1em;
+    border-left:0 #000000;
+    border-right:1px solid #000000;
+	background-color: #EBD699;
+ }
+li.tabQTP.ng-isolate-scope{
+    border-bottom:0;
+    border-top:0;
+    border-left:0;
+    border-right:0;
+ }
+.twitter-timeline{
+	height: 305px;
+	padding: 0;
+	margin:0;
+}
+ul{
+	list-style-type: none;
+}
+.aboutBody{
+	border-right-color:#000000;
+    border-right-width:2px;
+    border-right-style:ridge;
+
+    border-left-color:#000000;
+    border-left-width:2px;
+    border-left-style:ridge;
+    padding-left: 100px;
+}
+.thatFooter{
+	background: linear-gradient(#8EA3A3, #A5B5B5, #DBE1E1);
+}

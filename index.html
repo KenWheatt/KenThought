@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="css/profilepagecss.css" />
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.js"></script>
+<script type="text/javascript" src="js/angular-animate.js"></script>
+<script type="text/javascript" src="js/twitter-script.js"></script>
+<script type="text/javascript" src="js/ui-bootstrap-tpls-0.13.3.min.js"></script>
+<script type="text/javascript" src="js/ppjs.js"></script>
+
+
+<body ng-app="profilePage">
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Kenandrae Wheatt</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="https://www.linkedin.com/in/kenwheatt" class="">Link
+						up on Linkedin</a></li>
+				<li><a href="https://www.facebook.com/kenandrae.wheatt"
+					class="faceLink">Add me on Facebook</a></li>
+			</ul>
+			<p class="navbar-text navbar-right">Welcome to my wizz-nie-orld</p>
+		</div>
+	</nav>
+	<div class="fancy row">
+		<div ng-controller="MyCarousel" class="carousel col-md-6">
+			<div style="height: 305px">
+				<carousel interval="myInterval" no-wrap="noWrapSlides"> <slide
+					ng-repeat="slide in slides" active="slide.active"> <img
+					ng-src="{{slide.image}}" style="margin: auto; max-height: 300px;">
+				<div class="carousel-caption"></div>
+				</slide> </carousel>
+			</div>
+		</div>
+		<div >
+			<a class="twitter-timeline"
+				href="https://twitter.com/hashtag/siliconforest"
+				data-widget-id="633693996095672320">#siliconforest Tweets</a>
+		</div>
+	</div>
+	<div class="aboutBody">
+		<h2>About Me</h2>
+		<p>Hi my name is Kenandrae Wheatt. I'm a developer. I love playing
+			around with new technologies. This web site should be a lightweight
+			example of exactly that.I'll bring more content soon.</p>
+		<h2>Technical Skills</h2>
+		<div class="row" ng-controller="TechnicalSkills as tcctrl">
+			<div class="col-md-4" ng-repeat="set in tcctrl.sklist">
+				<h4>{{set.name}}</h4>
+				<ul>
+					<li ng-repeat="l in set.skill">{{l}}</li>
+				</ul>
+			</div>
+			<div class="col-md-4" ng-repeat="set in tcctrl.sklist">
+				<h4>Operating Systems/IDEs</h4>
+				<ul>
+					<li ng-repeat="did in set.systms">{{did}}</li>
+				</ul>
+			</div>
+			<div class="col-md-4" ng-repeat="set in tcctrl.sklist">
+				<h4>Frameworks/Tools</h4>
+				<ul>
+					<li ng-repeat="hi in set.tools">{{hi}}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div>
+		<h1>Relevant Experience</h1>
+		<tabset justified="true"> <tab heading="QED Training Program"
+			class="tabQTP">
+		<hr>
+		<ul>
+			<li>Designed, implemented and debugged Selenium test cases and
+				scripts in JUnit annotations and NightwatchJS.</li>
+			<li>Automated testing of browser based web applications and
+				websites, utilizing Selenium Page Object framework.</li>
+			<li>Developed mobile applications on Android and test suites in
+				Java and tested them against Android simulators and real devices.</li>
+			<li>Utilized REST-assured to test endpoint availability and
+				content validity.</li>
+		</ul>
+		</tab> <tab heading="RecommendR" class="tabQTP">
+		<hr>
+		<ul>
+			<h3>Worked on an Agile team, as a Full-stack Web Developer</h3>
+			<li>Built back-end components for a Restful single page web
+				application in Maven Spring 4.0 and Hibernate, tracking movie
+				recommendations between users, complete with login token
+				authentication.</li>
+			<li>Created a dynamic front end with Bootstrap and Handlebars,
+				optimizing user experience through a mobile-first design framework.</li>
+			<li>Collaborated on the design and implementation of project
+				database schema.</li>
+			<li>Performed QA role as needed, by writing REST-assured and
+				Selenium automation tests, ensuring test coverage of above 90%.</li>
+			<li>Participated in sprint demos, sprint planning, and sprint
+				retrospectives as part of a cross functional agile team.</li>
+		</ul>
+		</tab> <tab heading="Collectible" class="tabQTP">
+		<hr>
+		<ul>
+			<h3>Worked on an Agile team, as a Backend Developer and
+				SecondaryQA</h3>
+			<li>Implemented back end components for a Restful web
+				application in Maven Spring 4.0 and Hibernate. Collectible allows
+				users to keep track of their item collections.</li>
+			<li>Created suites of Selenium tests, using Selenium Page Object
+				framework, to secure working front-end functionalities.</li>
+			<li>Ensured the project kept a minimum of 90%-unit test
+				coverage.</li>
+		</ul>
+		</tab> </tabset>
+
+	</div>
+
+	<footer class="thatFooter">
+		<small>&copy; Leh Do IT</small>
+	</footer>
+
+</body>
+</html>
+</html>
