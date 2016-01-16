@@ -19,24 +19,19 @@ li.tabQTP.ng-isolate-scope{
     border-left:0;
     border-right:0;
  }
-.twitter-timeline{
-	height: 305px;
-	padding: 0;
-	margin:0;
-}
+
 ul{
 	list-style-type: none;
 }
 .aboutBody{
-	border-right-color:#000000;
-    border-right-width:2px;
-    border-right-style:ridge;
-
-    border-left-color:#000000;
-    border-left-width:2px;
-    border-left-style:ridge;
-    padding-left: 100px;
+	width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.thatFooter{
+.footer{
 	background: linear-gradient(#8EA3A3, #A5B5B5, #DBE1E1);
+    text-align: center;
+}
+.sectitle{
+    text-align: center;
 }
