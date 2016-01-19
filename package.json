@@ -19,5 +19,8 @@
   "dependencies": {
     "bower": "^1.7.2",
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "nightwatch": "^0.8.15"
   }
 }
