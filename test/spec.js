@@ -1,5 +1,11 @@
+ var homepage = require('./pages/homepage.js');
+
+
+console.log(homepage);
+
 describe('Homepage for KenThought', function() {
    
+    
     browser.ignoreSynchronization = true;
     
     beforeEach(function(){
@@ -11,6 +17,6 @@ describe('Homepage for KenThought', function() {
     });
     
     it('should have links to linkedIn and facebook', function() {
-        
+        expect(homepage.linkedInLink.isPresent()).toBe(true);
     });
 });
