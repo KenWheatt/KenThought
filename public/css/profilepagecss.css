@@ -1,9 +1,19 @@
+/*
 body { 
 	padding-top: 50px; 
 }
 .fancy{
 	background: linear-gradient(#8EA3A3, #A5B5B5, #DBE1E1); /* Standard syntax */
 }
+/*
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
 .tabQTP {
 	border-bottom:1px solid;
     border-top:2px solid #000000;
@@ -35,3 +45,4 @@ ul{
 .sectitle{
     text-align: center;
 }
+*/
