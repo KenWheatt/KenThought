@@ -1,4 +1,68 @@
+.wrapper{
+    padding-left: 40px;
+    padding-right: 40px;
+}
 #welcomeheader{
     text-align: center;
     border-bottom: none;
+}
+#aboutMe{
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+#aMTextContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#aMheader{
+    font-size: 400%;
+    color: floralwhite;
+    text-align: center;
+}
+#aMdescript{
+    font-size: 150%;
+    color: floralwhite;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex: 1 1 auto;
+}
+.aMFamPhoto{
+    margin-left: auto;
+    flex: 0 0 auto;
+}
+
+@media  screen and (max-width: 970px){
+    .goAway{        
+            display: none;
+    }
+    
+    #aboutMe{
+        flex-direction: column-reverse;
+    }
+    .aMFamPhoto{
+        width: 100%;
+    }
+}
+
+@media  screen and (max-width: 600px){
+    #aMdescript{
+        font-size: 100%;
+    }
+    
+ @media  screen and (max-width: 345px){
+     
+     .navbar-brand{
+         visibility: hidden;
+     } 
+     #navBar{
+         height: 57px;
+     }
+     #aMheader{
+         font-size: 250%;
+     }
+     
+    }
 }
