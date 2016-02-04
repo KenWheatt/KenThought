@@ -1,0 +1,91 @@
+.wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#welcomeheader {
+  text-align: center;
+  border-bottom: none;
+}
+#aboutMe {
+  background-color: black;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#aMTextContainer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#aMheader {
+  font-size: 400%;
+  color: floralwhite;
+  text-align: center;
+}
+#aMdescript {
+  font-size: 150%;
+  color: floralwhite;
+  padding-left: 30px;
+  padding-right: 30px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.aMFamPhoto {
+  margin-left: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+@media screen and (max-width: 970px) {
+  .goAway {
+    display: none;
+  }
+  #aboutMe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .aMFamPhoto {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #aMdescript {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 600px) and screen and (max-width: 345px) {
+  .navbar-brand {
+    visibility: hidden;
+  }
+  #navBar {
+    height: 57px;
+  }
+  #aMheader {
+    font-size: 250%;
+  }
+}
