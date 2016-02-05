@@ -48,9 +48,8 @@ gulp.task('wiredep', function() {
     .pipe(gulp.dest('./'));
 });
 
-//TODO hook up gulp-inject
-// after gulp is hooked up add tasks from inject and wired
-gulp.task('develop', function() {
+
+gulp.task('default', function() {
    return $.nodemon({
        script: 'app.js',
        ext: 'js html',
@@ -58,7 +57,7 @@ gulp.task('develop', function() {
    });
 });
 
-//
+
 ///////////////
 
 
@@ -78,3 +77,8 @@ function log(msg) {
         $.util.log($.util.colors.blue(msg));
     }
 }
+
+
+
+//TODO hook up gulp-inject
+// TODOafter gulp is hooked up add tasks from inject and wired
