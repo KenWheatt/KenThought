@@ -5,6 +5,9 @@ var del = require('del');
 var $ = require('gulp-load-plugins')({lazy: true});
 var wiredep = require('wiredep').stream;
 
+gulp.task('help', $.taskListing);
+
+gulp.task('default', ['help']);
 
 gulp.task('vet', function() {
     log('Analyzing source with JSHint and JSCS');
@@ -49,7 +52,7 @@ gulp.task('wiredep', function() {
 });
 
 
-gulp.task('default', function() {
+gulp.task('develop', function() {
    return $.nodemon({
        script: 'app.js',
        ext: 'js html',
