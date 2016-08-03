@@ -42,13 +42,13 @@ gulp.task('less-watcher', function() {
 });
 
 gulp.task('wiredep', function() {
-    gulp.src('./src/client/app/index.html')
+    gulp.src('./index.html')
     .pipe(wiredep({
         bowerJson: require('./bower.json'),
         directory: './src/vendor/',
-        ignorePath:'../..'}
-    ))
-    .pipe(gulp.dest('./'));
+        ignorePath:'src/'
+    }))
+    .pipe(gulp.dest('./src/'));
 });
 
 
