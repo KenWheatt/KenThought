@@ -46,10 +46,10 @@ gulp.task('wiredep', function() {
     gulp.src('./index.html')
     .pipe(wiredep({
         bowerJson: require('./bower.json'),
-        directory: './src/vendor/',
-        ignorePath:'src/'
+        directory: './dist/vendor/',
+        ignorePath:'dist/'
     }))
-    .pipe(gulp.dest('./src/'));
+    .pipe(gulp.dest('./dist'));
 });
 
 

@@ -1,6 +1,5 @@
 module.exports = function() {
-    var client = './src/client/';
-    var clientApp = client + 'app/';
+    var client = './src';
     var config = {
         temp: './dist/styles',
         /**
@@ -11,10 +10,9 @@ module.exports = function() {
             '!./src/vendor/**', 
             './*.js'
         ],
-        client: client,
         index: 'index.html',
         js:[],
-        less: client + 'styles/styles.less',
+        less:  'styles/styles.less',
      };
     return config;
 };
