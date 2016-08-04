@@ -5,6 +5,7 @@ var del = require('del');
 var $ = require('gulp-load-plugins')({lazy: true});
 var wiredep = require('wiredep').stream;
 
+
 gulp.task('help', $.taskListing);
 
 gulp.task('default', ['help']);
@@ -80,8 +81,3 @@ function log(msg) {
         $.util.log($.util.colors.blue(msg));
     }
 }
-
-
-
-//TODO hook up gulp-inject
-// TODOafter gulp is hooked up add tasks from inject and wired
